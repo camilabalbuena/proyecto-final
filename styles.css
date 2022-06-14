@@ -1,0 +1,187 @@
+
+*{
+     margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/*HEADER*/
+
+header {
+    margin-left: auto;
+    margin-right: auto;
+    background-color:white;
+    position:sticky;
+    top: 0%;
+    padding: 1rem 0.5rem 1rem 1rem;
+    z-index: 2;
+} 
+ 
+header h1{
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    text-transform: uppercase;
+    font-weight: 3rem;
+    font-size: 1.8rem;
+    letter-spacing: 0.4rem;
+    border-style: solid;
+    border-left: 0px;
+    border-right: 0px;
+    padding: 1.5rem;
+}
+
+/* PROPIEDADES DEL NAV*/
+
+nav {
+    margin: 1rem;
+}
+ 
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+ 
+nav ul li {
+    list-style: none;
+    padding: 0.5rem;
+    border: black;
+    border-style: double;
+    border-radius: solid;       
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-weight: bolder ;
+    font-size: 0.7rem;
+    color: black;
+    letter-spacing: 2px;
+}
+
+/*PROPIEDADES DEL MAIN*/
+ 
+main {
+    margin-bottom: 1rem;
+    background-color: #f9f4c8;
+    padding: 5rem;
+    align-items: center;
+}
+ 
+main p {
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 1rem;
+    letter-spacing: 0.2rem;
+    padding: 1rem;
+}
+
+.letraTitulos{
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 0.4rem;
+    font-size: 1.5rem;
+    padding-top: 0rem;
+    padding-bottom: 1rem;
+}
+ 
+ /*BOTONES*/
+
+.volverInicio{
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-weight: bolder ;
+    font-size: 0.7rem;
+    color: black;
+    letter-spacing: 2px;
+    padding: 1rem;
+    border: black;
+    border-style: double;
+    border-radius: solid;
+    position: relative;
+    bottom:2rem;
+    left: 0px;
+    padding: 1rem;
+    background-color: white;
+}
+ 
+ 
+.botonTienda{
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-weight: bolder ;
+    font-size: 0.5rem;
+    color: black;
+    letter-spacing: 2px;
+    padding: 15px;
+    border: black;
+    border-style: double;
+    border-radius: 2px solid;
+    position: relative;
+    bottom:40px;
+    left: 0px;
+    padding: 1rem;
+    background-color: white;
+    justify-content: center;
+}
+ 
+footer {
+    padding-top: 3rem;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+}
+
+/* MAIN GALERÍA*/
+
+.galeria{
+    width: 100%;
+    margin: auto;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 0.5rem;
+    column-gap: 0.5rem;
+}
+
+.galeria img{
+    width: 100%;
+}
+
+
+/*MEDIA QUERIES*/
+
+@media screen and (min-width: 1024px) {
+    header {
+        padding: 3rem 3rem 1rem 3rem;}
+
+    header h1{
+        font-size: 2.7rem;
+    letter-spacing: 1rem;
+    }   
+    
+    nav{
+        margin: 1.5rem;
+    }
+
+    nav ul li {
+        padding: 1rem;
+    }
+
+    nav ul li a {
+        font-size: 0.8rem;
+        letter-spacing: 5px;
+    }
+
+    .letraTitulos{
+        letter-spacing: 0.5rem;
+        font-size: 2rem;
+        padding: 3.5rem;
+    }
+
+    .galeria{
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+}
