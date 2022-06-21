@@ -30,13 +30,6 @@ header h1{
     padding: 1.5rem;
 }
 
-.navbar {
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-    justify-content: center;
-}
-
 /* PROPIEDADES DEL NAV*/
 
 nav {
@@ -139,6 +132,9 @@ footer {
     text-align: center;
     font-family: 'Playfair Display', serif;
 }
+
+/*MAIN COMPRAS*/
+
 
 /* MAIN GALERÍA*/
 
