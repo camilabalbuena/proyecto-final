@@ -22,3 +22,73 @@ header {
         padding: 1.5rem;
     }
 } 
+
+/* PROPIEDADES DEL NAV*/
+
+nav {
+    margin: 1rem;
+    ul {
+        @include flex;
+        li {
+            list-style: none;
+            padding: 0.5rem;
+            border: black;
+            border-style: double;
+            border-radius: solid;   
+              a {
+                text-decoration: none;
+                font-family: 'Montserrat', sans-serif;
+                text-transform: uppercase;
+                font-weight: bolder ;
+                font-size: 0.7rem;
+                color: black;
+                letter-spacing: 2px;
+            }    
+        }
+       
+    }
+}
+ 
+/*BOTONES¨*/
+
+.volverInicio{
+    @extend %botones;
+    font-size: 0.7rem;
+    padding: 1rem;
+    bottom:2rem;
+}
+ 
+ 
+.botonTienda{
+    @extend %botones;
+    font-size: 0.5rem;
+    padding: 15px;
+    bottom:40px;
+}
+
+
+// mixin//
+
+@mixin flex {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+// extend //
+
+%botones{
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-weight: bolder ;
+    color: black;
+    letter-spacing: 2px;
+    border: black;
+    border-style: double;
+    border-radius: 2px solid;
+    position: relative;
+    background-color: white;
+    justify-content: center;
+    padding: 1rem;
+    left: 0px;
+}

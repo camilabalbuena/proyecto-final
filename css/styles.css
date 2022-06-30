@@ -17,3 +17,10 @@ header {
     border-left: 0px;
     border-right: 0px;
     padding: 1.5rem; }
+
+nav {
+  margin: 1rem; }
+
+nav ul {
+  display : flex;
+  justify-content: space-evenly; }
